@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>login</title>
+<!-- Include Font Awesome library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #F0FFFF;
+        background-size: cover;
+    }
+    .container {
+        width: 92rem;
+        height: 40rem;
+        background-color: #F0FFFF; /* Set background color */
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+    }
+    h2 {
+        background-color: #0000FF;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        border-radius: 5px;
+        width: 100%;
+    }
+    .welcome {
+        text-align: center;
+        font-size: 2.5rem;
+        color: black;
+        text-shadow: 2px 2px 4px #ffffff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-grow: 1;
+        font-family: cursive;
+    }
+    .login-links {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        bottom: 10rem;
+    }
+    .login-links div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex: 1;
+    }
+    .login-links a {
+        text-decoration: none;
+        color: blue;
+        font-weight: bold;
+        margin-top: 10px;
+    }
+    .login-links a:hover {
+        text-decoration: underline;
+        color: darkblue;
+    }
+    .login-links i {
+        font-size: 2rem;
+        color: black;
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <h2>Online Library</h2>
+        <div class="welcome">Welcome to our Library</div>
+        <div class="login-links">
+            <div class="admin-login">
+                <i class="fas fa-user-shield"></i>
+                <a href="homeStart.html">Admin Login</a>
+            </div>
+            <div class="student-login">
+                <i class="fas fa-user-graduate"></i>
+                <a href="student.html">Student Login</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
